@@ -1,5 +1,5 @@
 import React from "react";
-const Weathercard = ({date,tem,weathermood}) => {
+const Weathercard = ({date,tem,weathermood,icon}) => {
 
 
   return(
@@ -7,7 +7,7 @@ const Weathercard = ({date,tem,weathermood}) => {
       {
         <div className="card">
           <br></br>
-          {/* <img src={iconurl} alt=''/> */}
+          <img src='http://openweathermap.org/img/w/03d.png' alt='icon'/>
           <p>Date: {date}</p>
           <br></br>
           <p>Temp: {tem}&deg;</p>

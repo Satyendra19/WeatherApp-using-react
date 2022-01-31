@@ -38,7 +38,8 @@ const Weather = () =>{
         <div className='Mcard'>
             {!!tempInfo && tempInfo.map((i,index)=>(
                 <div key={index}>
-                    <Weathercard date={i.date} temp={i.tem} weathermood={i.weathermood}/>
+                    <Weathercard date={i.date} temp={i.tem} weathermood={i.weathermood}
+                    icon={i.icon}/>
                 </div>  
             ))}
         </div>
